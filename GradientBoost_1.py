@@ -49,9 +49,9 @@ def add_advanced_time_features(df):
 
 # Load data
 print("Loading data...")
-train_df = pd.read_csv(r'E:\Programs\Adani_Thinkbiz\ML_Models\Datasets\Merged_Datasets\train_preprocessed.csv', 
+train_df = pd.read_csv('./train_preprocessed.csv', 
                        index_col='Dates', parse_dates=True)
-test_df = pd.read_csv(r'E:\Programs\Adani_Thinkbiz\ML_Models\Datasets\Merged_Datasets\test_preprocessed.csv', 
+test_df = pd.read_csv('./test_preprocessed.csv', 
                       index_col='Dates', parse_dates=True)
 
 # Handle outliers

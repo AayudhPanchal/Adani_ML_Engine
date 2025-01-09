@@ -138,16 +138,16 @@ def predict_multiple_dates(start_date, end_date, historical_data, model_path='en
     return pd.DataFrame(predictions).set_index('Date')
 
 # Load your historical data
-historical_data = pd.read_csv(r'E:\Programs\Adani_Thinkbiz\ML_Models\Datasets\Merged_Datasets\train_preprocessed.csv', index_col='Dates', parse_dates=True)
+historical_data = pd.read_csv('./train_preprocessed.csv', index_col='Dates', parse_dates=True)
 
 # Predict for a single date
-try:
-    prediction = predict_usage_for_date('2019-12-31', historical_data)
-    print(f"Predicted usage for 2019-12-31: {prediction:.2f}")
-except Exception as e:
-    print(f"Error: {str(e)}")
+# try:
+#     prediction = predict_usage_for_date('2019-12-31', historical_data)
+#     print(f"Predicted usage for 2019-12-31: {prediction:.2f}")
+# except Exception as e:
+#     print(f"Error: {str(e)}")
 
-# Predict for a range of dates
-predictions_df = predict_multiple_dates('2020-12-01', '2020-12-31', historical_data)
-print("\nPredictions for December 2019:")
-print(predictions_df)
+# # Predict for a range of dates
+# predictions_df = predict_multiple_dates('2020-12-01', '2020-12-31', historical_data)
+# print("\nPredictions for December 2019:")
+# print(predictions_df)

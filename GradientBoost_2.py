@@ -138,7 +138,7 @@ def predict_multiple_dates(start_date, end_date, historical_data, model_path='en
     return pd.DataFrame(predictions).set_index('Date')
 
 # Load your historical data
-historical_data = pd.read_csv('./train_preprocessed.csv', index_col='Dates', parse_dates=True)
+# historical_data = pd.read_csv('./train_preprocessed.csv', index_col='Dates', parse_dates=True)
 
 # Predict for a single date
 # try:

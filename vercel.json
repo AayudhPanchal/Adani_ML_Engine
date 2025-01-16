@@ -1,0 +1,19 @@
+{
+    "builds": [
+        {
+            "src": "app.py",
+            "use": "@vercel/python",
+            "config": {
+                "runtime": "python3.11"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "app.py"
+        }
+    ],
+    "installCommand": "pip install -r requirements.txt",
+    "startCommand": "uvicorn app:app --host 0.0.0.0 --port 8000"
+}

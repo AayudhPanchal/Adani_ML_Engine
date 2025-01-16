@@ -1,8 +1,1 @@
-train_preprocessed.csv
-test_preprocessed.csv
-merged_data_10.csv
-energy_prediction_model.pkl
 venv/
-lstm_power_model.h5
-scaler_X.joblib
-scaler_y.joblib
